@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-banner {
+  background-image: linear-gradient(
+      45deg,
+      rgb(51 43 43 / 75%),
+      rgb(20 19 20 / 61%)
+    ),
+    url(./Images/background-banner.jpg);
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.home-content {
+  height: 100vh;
+}
+
+.home-content h1 {
+  color: white;
+  font-size: 3.125rem;
+  font-weight: bold;
+  padding-left: 54px;
+}
+
+.home-content p {
+  font-size: 18px;
+}
+
+.footer-custom ul li {
+  list-style: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+.footer-custom a{
+  color: white;
+}
+/* netflix content image css */
+.netflix-content:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* footer arrow css */
+.arrow {
+  float: right;
+  border: 2px solid white;
+  padding: 8px 18px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  /* navbar */
+  .logo-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: auto; /* Adjust this if necessary */
+    padding: 10px; /* Optional padding */
+    background-color: white; 
+  }
+  
+  .background-banner .sticky-top div:nth-child(2){
+    margin-right: 10px !important;
+  }
+
+  /* home content media queries */
+  .home-content .heading-custom {
+    text-align: center;
+    padding-left: 0;
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    text-align: center;
+  }
+
+  .home-content .input-div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* second section */
+  .second-content img {
+    /* margin-left: 30px; */
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .second-content p,
+  .third-content p,
+  .forth-content p {
+    font-size: 15px !important;
+  }
+
+  .second-content p,
+  h2 {
+    text-align: center;
+  }
+
+  .second-content .row div:nth-child(2) {
+    margin-top: 0 !important;
+  }
+  /* third section */
+
+  .third-content p,
+  h1 {
+    text-align: center;
+  }
+
+  .third-content .row {
+    flex-direction: column-reverse;
+  }
+
+  .third-content img {
+    width: 100%;
+    height: 100%;
+    margin-left: 0 !important;
+  }
+  /* forth content css */
+  .forth-content p,
+  .forth-content h1 {
+    text-align: center;
+    margin-left: 0 !important;
+  }
+
+  .forth-content img {
+    width: 100%;
+    height: 100%;
+  }
+  /* footer css or media queries */
+  .footer-custom .row {
+    flex-direction: column;
+  }
+
+  .footer-custom .row div {
+    text-align: center;
+  }
+
+  .footer-custom .footer-small {
+    margin: 20px auto;
+  }
+
+  .footer-small li {
+    font-size: 20px;
+  }
+
+  .footer-custom .developer-custom {
+    font-size: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    position: relative;
+  }
+
+  .footer-custom .developer-custom .arrow {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 4px 10px;
+  }
+
+  .footer-custom .developer-custom:hover {
+    color: red;
+  }
+
+  .footer-custom {
+    width: 100%;
+  }
+  .footer-custom a{
+    color: white;
+  }
+  ol, ul{
+    padding-left: 0 !important;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* second section */
+  .second-content .row div:nth-child(2),
+  .forth-content .row div:nth-child(2) {
+    text-align: center;
+  }
+  /* third section */
+  .third-content .netflix-content {
+    margin-left: 0;
+    text-align: center;
+  }
+  /* footer */
+  .footer-custom .row div:nth-child(1) {
+    margin: 0 auto;
+  }
+  .footer-custom img {
+    margin-left: 0;
+  }
+  .footer-custom .row div {
+    text-align: center;
+  }
+  .arrow {
+    padding: 18px 22px;
+  }
+}
+
+

@@ -1,0 +1,108 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.491), rgba(0, 0, 0, 0.416)) , url(Images/background-banner.jpg);
+    height: 100vh;
+}
+.login-top{
+    padding: 20px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Styling the login box */
+.login-box {
+    
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 40px 30px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.login-title {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+/* Input group styling */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background-color: transparent;
+    font-size: 16px;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-bottom: 2px solid #e50914;
+    outline: none;
+}
+
+/* Styling the input labels */
+.input-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Submit button styling */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #b20710;
+}
+
+/* Signup link styling */
+.signup-link {
+    margin-top: 20px;
+}
+
+.text {
+    color: #fff;
+    font-size: 14px;
+}
+
+.text a {
+    color: #e50914;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.text a:hover {
+    color: #b20710;
+}
